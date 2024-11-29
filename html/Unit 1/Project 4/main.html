@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Architecture Projects</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #666262;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                margin: 0 15px;
+            }
+            section {
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            h2 {
+                color: #f89696;
+            }
+
+            .Cost{
+                font-weight: 800;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            select, label, input, textarea {
+                width: 50%;
+                padding: 6px;
+                margin: 2px 0;
+                border-radius: 4px;
+            }
+            button {
+                padding: 10px 15px;
+                background-color: #5cb85c;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #4cae4c;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            
+            <h1>Student Architecture</h1>
+            <nav>
+                <a href="">About us</a>
+                <a href="">Home</a>
+                <a href="">Services</a>
+                <a href="">Contact us</a>
+                <a href="">Projects</a>
+            </nav>
+            
+        </header>
+
+        <section id="projects">
+            <h2>Project 1: Modern Villa</h2>
+            <p>Description: A stunning modern villa designed with luxury and sustainability in mind. Features an open floor plan and green technologies.</p>
+            <p class="Cost">Cost: Rs.1,20,00,000</p>
+            <img style="height: 120px;" src="villa.jpg" alt="Modern Villa">
+
+            <h2>Project 2: Urban Office Building</h2>
+            <p>Description: A sleek office building designed for productivity and collaboration, incorporating modern design elements and eco-friendly materials.</p>
+            <p class="Cost">Cost: Rs.85,00,000</p>
+            <img style="height: 120px;width: 200px;" src="office.jpg" alt="Urban Office">
+
+            <h2>Project 3: Waterfront House</h2>
+            <p>Description: A beautiful waterfront property with panoramic views, featuring spacious living areas and outdoor entertainment spaces.</p>
+            <p class="Cost">Cost: Rs.1,50,00,000</p>
+            <img style="height: 120px;width: 200px;" src="waterfront.jpg" alt="Waterfront House">
+        </section>
+
+        <footer>
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <label>
+                    <b>Name*</b><br>
+                    <input type="text" placeholder="Your Name" required>
+                </label>
+                <label>
+                    <b>Email*</b><br>
+                    <input type="email" placeholder="Your Email" required>
+                </label>
+                <label>
+                    <b>Mention your project type</b><br>
+                    <input type="text" placeholder="Project Type" required>
+                </label>
+                <label>
+                    <b>Enter your price range</b><br>
+                    <select name="price range" id="">
+                        <option value=""></option>
+                        <option value="Rs.20 Lakh">Rs.20 Lakh</option>
+                        <option value="Rs.20 Lakh">Rs.50 Lakh</option>
+                        <option value="Rs.20 Lakh">Rs.70 Lakh</option>
+                        <option value="Rs.1 Crore">Rs.1 Crore</option>
+                        <option value="Rs.1 Crore+">Rs.1 Crore+</option>
+                    </select>
+                </label>
+                
+                <textarea placeholder="Project comments" rows="4" required></textarea>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </footer>
+
+    </body>
+</html>
